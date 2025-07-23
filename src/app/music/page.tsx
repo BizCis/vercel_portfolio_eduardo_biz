@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Music() {
   return (
     <section className="max-w-2xl mx-auto py-12 px-4">
@@ -15,7 +17,9 @@ export default function Music() {
         This gallery is a collection of moments from our band "Salón Morado." It captures our rehearsal sessions, concerts, and the creative process behind each song. It's a testament to our evolution as artists and the magic that happens when a passion for music unites us.
       </p>
       <div className="flex justify-center mt-10">
-        <a href="/" className="px-6 py-2 rounded-full bg-[#b22222] text-white font-semibold shadow-md hover:bg-[#a11d1d] transition-all border border-[#b22222]">Regresar al inicio</a>
+        <Link href="/" legacyBehavior>
+          <a className="px-6 py-2 rounded-full bg-[#b22222] text-white font-semibold shadow-md hover:bg-[#a11d1d] transition-all border border-[#b22222]">Regresar al inicio</a>
+        </Link>
       </div>
     </section>
   );
