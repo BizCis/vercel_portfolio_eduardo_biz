@@ -1,6 +1,7 @@
 import BackToTopButton from "./BackToTopButton";
 import AnalysisCard from "./AnalysisCard";
 import React from "react";
+import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-[#f4f4f5] font-sans">
@@ -37,11 +38,14 @@ export default function Home() {
             <div className="flex flex-col items-start w-full md:w-1/3 md:pr-6 mb-8 md:mb-0">
               <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-left" style={{color: '#D5544E', lineHeight: '1.1'}}>About Me</h2>
               <div className="h-1 w-24 rounded-full mb-6" style={{background: 'linear-gradient(90deg, #D5544E 0%, #f4f4f5 100%)'}}></div>
-              <img
+              <Image
                 src="/Profile_photo_eduardo.jpg"
                 alt="Eduardo Cisneros Biz profile"
+                width={176}
+                height={176}
                 className="w-40 h-40 md:w-44 md:h-44 object-cover rounded-full border-4 border-[#D5544E] shadow-lg mb-4"
                 style={{background: '#f4f4f5'}}
+                priority
               />
               <a
                 href="/2_Eduardo_Cisneros_CV.pdf"
@@ -60,13 +64,13 @@ export default function Home() {
               <span className="inline-block px-4 py-1 rounded-full text-xs font-bold bg-[#D5544E] text-[#f4f4f5] shadow mb-2">Data Analyst</span>
               <p className="text-base text-[#f4f4f5] opacity-80 mb-2">Querétaro, México</p>
               <p className="text-lg text-[#f4f4f5] leading-relaxed">
-                I'm a data analyst with over 6 years of experience transforming data into insights that drive smarter decisions. I specialize in end-to-end analytics — from cleaning and analyzing data to building dashboards and telling clear, compelling stories.
+                I&apos;m a data analyst with over 6 years of experience transforming data into insights that drive smarter decisions. I specialize in end-to-end analytics — from cleaning and analyzing data to building dashboards and telling clear, compelling stories.
               </p>
               <p className="text-base text-[#f4f4f5] opacity-90">
-                I work with tools like SQL, Excel, Tableau, Python, and macros, and I enjoy learning new technologies that make my work more efficient. One project I'm proud of: a Python script I built to detect bot activity, which helped reduce fraud and improve data quality.
+                I work with tools like SQL, Excel, Tableau, Python, and macros, and I enjoy learning new technologies that make my work more efficient. One project I&apos;m proud of: a Python script I built to detect bot activity, which helped reduce fraud and improve data quality.
               </p>
               <p className="text-base text-[#f4f4f5] opacity-90 mb-2">
-                Above all, I’m driven by the impact data can have when it’s clear, accurate, and well communicated.
+                Above all, I&apos;m driven by the impact data can have when it&apos;s clear, accurate, and well communicated.
               </p>
             </div>
           </div>
